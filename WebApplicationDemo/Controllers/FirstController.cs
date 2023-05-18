@@ -15,10 +15,10 @@ namespace WebApplicationDemo.Controllers
             return View();
         }
 
-        public IActionResult First()
-        {
-            TempData["address"] = "Delhi";
-            return RedirectToAction("Index");
-        }
+        //public IActionResult First()
+        //{
+        //    TempData["address"] = "Delhi";
+        //    return RedirectToAction("Index");
+        //}
     }
 }

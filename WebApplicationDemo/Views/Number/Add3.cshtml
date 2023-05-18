@@ -1,0 +1,30 @@
+﻿@model WebApplicationDemo.Models.Numbers
+@{
+    ViewData["Title"] = "Add3";
+}
+
+<h1>Add3</h1>
+@{
+    if (ViewBag.result != null)
+    {
+        <b> @ViewBag.result </b>
+    }
+    else
+    {
+
+        @using (Html.BeginForm())
+        {
+            @Html.LabelFor(model=>model.Num1)
+            ;
+            @Html.TextBoxFor(model=>model.Num1)
+            ;
+
+            @Html.LabelFor(model=>model.Num2)
+            ;
+            @Html.TextBoxFor(model=>model.Num2)
+            ;
+            <button type="submit"> Add </button>
+        }
+    }
+}
+

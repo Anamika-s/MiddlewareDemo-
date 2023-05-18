@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Add2";
+}
+
+<h1>Add2</h1>
+@{
+    if (ViewBag.result != null)
+    {
+        <b> @ViewBag.result </b>
+    }
+    else 
+{
+@using (Html.BeginForm())
+{
+    @Html.Label("Enter Number1")
+    ;
+    @Html.TextBox("num1")
+    ;
+
+    @Html.Label("Enter Number 2")
+    ;
+    @Html.TextBox("num2")
+    ;
+
+    @Html.Label("Result")
+    ;
+    @Html.TextBox("result")
+    ;
+
+
+        <button type="submit"> Add </button>
+
+}
+}
+}
