@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebApplicationDemo.Models.Student>
+
+ 
+
+<h1>List1</h1>
+
+@{
+    foreach(var student in @Model)
+    {
+        <h2> @student.Id </h2>
+        
+    }
+}
+

@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<h1> First Page </h1>
+<h3> Current Date is @ViewBag.Date </h3>
+<strong> @ViewData["course"] </strong>
+<b> Welcome @ViewBag.name </b>
+<h2> Your address is @ViewBag.address</h2>
+@ViewBag.course
+@{
+    for(int i=0;i<10;i++)
+    {
+          <span> @(i+10) </span>
+    }
+}
+
+
+
