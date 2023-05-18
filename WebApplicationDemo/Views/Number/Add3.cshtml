@@ -1,16 +1,18 @@
 ﻿@model WebApplicationDemo.Models.Numbers
+
 @{
     ViewData["Title"] = "Add3";
 }
 
 <h1>Add3</h1>
 @{
-    if (ViewBag.result != null)
-    {
-        <b> @ViewBag.result </b>
-    }
-    else
-    {
+    //if (ViewBag.result != null)
+    //{
+        
+    //    <b> @ViewBag.result </b>
+    //}
+    //else
+    //{
 
         @using (Html.BeginForm())
         {
@@ -23,8 +25,15 @@
             ;
             @Html.TextBoxFor(model=>model.Num2)
             ;
+            if(Model.Num3!=0)
+            {
+
+            @Html.LabelFor(model=>model.Num3)
+            ;
+            @Html.TextBoxFor(model=>model.Num3)
+            ;}
             <button type="submit"> Add </button>
         }
     }
-}
+@*}*@
 

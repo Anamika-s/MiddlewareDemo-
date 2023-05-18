@@ -1,10 +1,12 @@
-﻿
+﻿@model System.Int32
 @{
     ViewData["Title"] = "Add1";
 }
 
 <h1>Add1</h1>
 
+@{if(@Model!=null)
+@Model}
 @using(Html.BeginForm())
 {
      @Html.Label("Enter Number1");

@@ -1,16 +1,15 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Add2";
 }
 
+
 <h1>Add2</h1>
-@{
-    if (ViewBag.result != null)
-    {
-        <b> @ViewBag.result </b>
-    }
-    else 
-{
+
+         <b> @ViewBag.result </b>
+         <script>
+      document.getElementById("result").Value=@ViewBag.result;
+  </script>
+ 
 @using (Html.BeginForm())
 {
     @Html.Label("Enter Number1")
@@ -32,5 +31,5 @@
         <button type="submit"> Add </button>
 
 }
-}
-}
+
+ 

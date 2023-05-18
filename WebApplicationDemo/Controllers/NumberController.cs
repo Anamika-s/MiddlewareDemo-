@@ -29,7 +29,7 @@ namespace WebApplicationDemo.Controllers
         {
             int result = Byte.Parse(num1) + Byte.Parse(num2);
             ViewBag.result = result;
-            return View();
+            return View(result);
         }
 
 
@@ -62,8 +62,9 @@ namespace WebApplicationDemo.Controllers
         {
 
             int res =  numbers.Num1+ numbers.Num2;
-            ViewBag.result = res;
-            return View();
+            numbers.Num3 = res;
+            //ViewBag.result = res;
+            return View(numbers);
         }
     }
 }
